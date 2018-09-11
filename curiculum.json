@@ -41,7 +41,7 @@
 
     {
     "id": "5",
-    "category": "programEL",
+    "category": "1st-semester",
     "name": "Design & Programming of digital user interfaces 1",
     "shortName": "UI 1",
     "shortDescription": "",
@@ -53,7 +53,7 @@
   },
     {
     "id": "6",
-    "category": "programEL",
+    "category": "1st-semester",
     "name": "Design & Programming of digital content 1",
     "shortName": "Content 1",
     "shortDescription": "",
@@ -65,7 +65,7 @@
   },
     {
     "id": "7",
-    "category": "programEL",
+    "category": "2nd-semester",
     "name": "Design & Programming of digital user interfaces 2",
     "shortName": "UI 2",
     "shortDescription": "",
@@ -77,7 +77,7 @@
   },
     {
     "id": "8",
-    "category": "programEL",
+    "category": "2nd-semester",
     "name": "Design & Programming of digital content 2",
     "shortName": "Content 2",
     "shortDescription": "",
@@ -89,7 +89,7 @@
   },
     {
     "id": "9",
-    "category": "programEL",
+    "category": "3rd-semester",
     "name": "Option 1: Digital Design og Indhold",
     "shortName": "Digital Design og Indhold",
     "shortDescription": "",
@@ -101,7 +101,7 @@
   },
     {
     "id": "10",
-    "category": "programEL",
+    "category": "3rd-semester",
     "name": "Option 2: Persuasive Content",
     "shortName": "Persuasive Content",
     "shortDescription": "",
@@ -113,7 +113,7 @@
   },
     {
     "id": "11",
-    "category": "programEL",
+    "category": "3rd-semester",
     "name": "Option 3: FrontEnd Design",
     "shortName": "FrontEnd Design",
     "shortDescription": "",
@@ -125,7 +125,7 @@
   },
     {
     "id": "12",
-    "category": "programEL",
+    "category": "4th-semester",
     "name": "Internship",
     "shortName": "Internship",
     "shortDescription": "",
@@ -137,7 +137,7 @@
   },
     {
     "id": "13",
-    "category": "programEL",
+    "category": "4th-semester",
     "name": "Final Exam Project",
     "shortName": "Final Project",
     "shortDescription": "",
