@@ -7,7 +7,7 @@
     "shortName": "1st",
     "programEl":[  "Design & Programming of digital user interfaces 1",
                    "Design & Programming of digital content 1" ],
-    "exam": "30 ECTS",
+    "exam": "<h2>Exam</h2><p>Individual oral exam, 7-point scale</><p>30 ECTS</p>",
   },
   {
     "id": "2",
@@ -16,7 +16,7 @@
     "shortName": "2nd",
     "programEl":[  "Design & Programming of digital user interfaces 2",
                    "Design & Programming of digital content 2" ],
-    "exam": "30 ECTS",
+    "exam": "<h2>Exam</h2><p>Group oral exam, 7-point scale</><p>30 ECTS</p>",
   },
   {
     "id": "3",
@@ -26,7 +26,7 @@
     "programEl":[  "Option 1: Digital Design og Indhold",
                    "Option 2: Persuasive Content",
                    "Option 3: FrontEnd Design"],
-     "exam": "30ECTS",
+     "exam": "<h2>Exam</h2><p>Elective exam, 7-point scale</><p>30 ECTS</p>",
   },
     {
     "id": "4",
