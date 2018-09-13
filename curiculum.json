@@ -5,9 +5,9 @@
     "category": "main",
     "name": "Semester I",
     "shortName": "1st",
-    "programEl":[  "Design & Programming of digital user interfaces 1",
-                   "Design & Programming of digital content 1" ],
-    "exam": "<h2>Exam</h2><p>Individual oral exam, 7-point scale</><p>30 ECTS</p>",
+    "programEl":["Design & Programming of digital user interfaces 1",
+                 "Design & Programming of digital content 1"],
+    "exam": "<h2>Exam</h2><p>Individual oral exam, 7-point scale</><p>30 ECTS</p>"
   },
   {
     "id": "2",
@@ -16,7 +16,7 @@
     "shortName": "2nd",
     "programEl":[  "Design & Programming of digital user interfaces 2",
                    "Design & Programming of digital content 2" ],
-    "exam": "<h2>Exam</h2><p>Group oral exam, 7-point scale</><p>30 ECTS</p>",
+    "exam": "<h2>Exam</h2><p>Group oral exam, 7-point scale</><p>30 ECTS</p>"
   },
   {
     "id": "3",
@@ -26,7 +26,7 @@
     "programEl":[  "Option 1: Digital Design og Indhold",
                    "Option 2: Persuasive Content",
                    "Option 3: FrontEnd Design"],
-     "exam": "<h2>Exam</h2><p>Elective exam, 7-point scale</><p>30 ECTS</p>",
+     "exam": "<h2>Exam</h2><p>Elective exam, 7-point scale</><p>30 ECTS</p>"
   },
     {
     "id": "4",
@@ -36,7 +36,7 @@
     "programEl":[  "Internship",
                    "Final Exam Project"],
     "internship": "15ECTS",
-    "exam": "15ECTS",
+    "exam": "15ECTS"
   },
 
     {
@@ -49,7 +49,7 @@
     "skills": "<h2>Skills</h2><p>The student is able to apply basic key methods and tools for managing a simple multimedia production of relevance to professional practices in the field. Moreover the student can plan and conduct user tests of digital media productions, apply and assess basic technologies for the development of user interfaces.</p>",
     "knowledge": "<h2>Knowledge</h2><p>The student has knowledge of basic principles for the composition and layout of digital media productions.  Moreover, the student has knowledge of practice-oriented development methods for digital media production and knows basic methods for modelling, structuring and developing digital user interfaces.</p>",
      "competance": "<h2>Competences</h2><p>The student gained the competencies needed to participate in interdisciplinary work processes in connection with the design and development of digital user interfaces.</p>",
-    "ECTS": "15 ECTS",
+    "ECTS": "15 ECTS"
   },
     {
     "id": "6",
@@ -61,7 +61,7 @@
     "skills": "<h2>Skills</h2><p>The student has acquired the skills needed to collect and apply empirical data about users and situations. Moreover the student can evaluate a digital content production based on a given brief and produce basic-level digital content based on user understanding.</p>",
     "knowledge": "<h2>Knowledge</h2><p>The student has acquired a knowledge of the multimedia designer’s role in the value chain in digital productions and a knowledge of digital media and digital media platforms used by the profession. Furthermore the student gained knowledge of basic methods and theories regarding user understanding within digital content production.</p>",
     "competance": "<h2>Competences</h2><p>The student has acquired the competencies needed to participate in interdisciplinary work processes in connection with the design and development of digital content.</p>",
-    "ECTS": "15 ECTS",
+    "ECTS": "15 ECTS"
   },
     {
     "id": "7",
@@ -73,7 +73,7 @@
     "skills": "<h2>Skills</h2><pThe student has acquired the skills needed to plan and assess project management in team-based digital media productions.  Furthermore the student can apply and document key design processes in complex digital media productions, and communicate them to stakeholders from the digital media industry.</p>",
     "knowledge": "<h2>Knowledge</h2><p>The student has acquired an understanding of the company’s external environment. Moreover, the student gained knowledge of key methods and tools related to project management and estimation of digital media productions. The student is now able to program complex digital user interfaces, and has the ability to account for the choice of programming practice based on practice.</p>",
     "competance": "<h2>Competences</h2><p>The student has acquired the competencies needed to identify relevant theories, methods and tools for the execution of complex digital media productions.</p>",
-    "ECTS": "15 ECTS",
+    "ECTS": "15 ECTS"
   },
     {
     "id": "8",
@@ -85,7 +85,7 @@
     "skills": "<h2>Skills</h2><p>The student has acquired the skills needed to apply key tools and data to optimise digital media production. The student can now apply key theories, methods and tools for the production of digital user experiences and communicate digital solutions for content production to stakeholders from the digital media industry.</p>",
     "knowledge": "<h2>Knowledge</h2><p>The student has acquired knowledge of the methods and theories applied in the profession for complex digital content production. The student has an understanding of the technologies used to store and exchange data, and the ability to account for the choice of technologies based on practice and an understanding of the relationship between the business models used and complex digital content production.</p>",
     "competance": "<h2>Competences</h2><p>The student has acquired the competencies needed to identify relevant theories, methods and tools for the production of complex digital content in teams.</p>",
-    "ECTS": "15 ECTS",
+    "ECTS": "15 ECTS"
   },
     {
    "id": "9",
@@ -97,7 +97,7 @@
     "skills": "",
     "knowledge": "",
     "competance": "",
-    "ECTS": "30 ECTS",
+    "ECTS": "30 ECTS"
   },
     {
     "id": "10",
@@ -107,7 +107,7 @@
     "shortDescription": "",
     "longDescription": "",
     "skills": "<h2>Electives</h2><p>The students have the opportunity to choose one of the following elective courses.</p><ul><li>Frontend Design (taught in English)</li><li>Persuasive Content (taught in English)</li><li>Digitalt design og indhold (taught in Danish)</li><p>The electives are offered as a means for students to specialise themselves in particular subjects related to multimedia design and communication in line with the purpose and objectives of the study programme.</p>",
-    "ECTS": "30 ECTS",
+    "ECTS": "30 ECTS"
   },
     {
     "id": "12",
@@ -118,8 +118,8 @@
     "longDescription": "",
     "skills": "<h2>Internship</h2><p>During the internship, students are faced with professionally relevant issues, just as they become familiarised with relevant job functions. Students must actively and independently seek a placement with one or more private or public companies.</p>",
     "knowledge": "<h2>Exam</h2><p>The internship period concludes with a test. This test is evaluated with an internal examiner and is graded according to the 7-point scale.</p>",
-    "competance": ""
-    "ECTS": "15 ECTS",
+    "competance": "",
+    "ECTS": "15 ECTS"
   },
     {
     "id": "13",
@@ -131,6 +131,6 @@
     "skills": "<h2>Final Exam</h2><p>The final exam project must document the student’s understanding of practice and key applied theories and methods in relation to a practice-oriented issue based on a specific assignment within the area of the programme. It needs to have a problem statement, that needs to be approved by the educational institution. The final exam project can be done in cooperation with a public or private company. Alternatively, the final exam project can be based on the student starting up his or her own business. The project concludes with a report and a digital media production. The final exam project must not exceed 30 standard pages for one student + 10 standard pages for each additional group member. Front page, table of contents, bibliography and appendices are not included in the maximum number of pages. Appendices will not be assessed. A standard page is 2,400 characters with spaces and footnotes. </p><p>The exam consists of an oral and a written part with an external co-examiner, where a single aggregate individual grade according to the 7-point grading scale is awarded for the written project and the oral performance.</p>",
     "knowledge": "",
     "competance": "",
-    "ECTS": "15 ECTS",
-  },
+    "ECTS": "15 ECTS"
+  }
 ]
