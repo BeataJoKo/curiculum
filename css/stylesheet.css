@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400i,900');
+
+  html, body   {
+    margin: 0;
+    padding: 0;
+}
+
+    body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  /* Semester blocks section at the top */
+
+  .semester-links h1 {
+    color:white;
+  }
+
+  .semester-links {
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Grid containing semester 1,2,3 and 4 */
+
+  .grid-container {
+        display:grid;
+        margin:auto;
+        grid-template-columns: repeat(2, minmax(200px, 400px));
+        grid-template-rows: repeat(2, minmax(50px, 150px));
+        padding-bottom: 100px;
+        grid-template-areas:
+        "semester1 semester2"
+        "semester3 semester4"
+
+  }
+
+  .semester1 {
+    background-color: #FFB4AA;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: semester1;
+  }
+  .semester2 {
+    background-color: #6ECEB2;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+      grid-area: semester2;
+  }
+
+  .semester3 {
+    background-color: #59CBE8;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+      grid-area: semester3;
+  }
+  .semester4 {
+      background-color: #FDD757;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      grid-area: semester4;
+  }
+
+  /*Website navbar */
+
+  #logo {
+      height: 100px;
+      vertical-align: middle;
+  }
+
+
+  .nav-wrapper {
+      background-color: black;
+      display: flex;
+        justify-content: space-around;
+  }
+
+  nav ul {
+      display: inline;
+      list-style: none;
+  }
+
+  nav li {
+      display: inline;
+      cursor: pointer;
+      padding: 43px 20px;
+      margin-left: 20px;
+  }
+
+  nav a {
+      text-decoration: none;
+      font-size: 2em;
+      color: white;
+  }
+
+  a:hover {
+      color: red;
+  }
+
+
+
+  /* Main heading above the semester blocks */
+
+  .heading {
+    text-transform: uppercase;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+      line-height: 1;
+      margin-top: 0;
+      font-size: 3rem;
+      font-weight: 300;
+      padding-top: 50px;
+
+  }
+
+  .heading2 {
+    text-transform: uppercase;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+/* Below is 1st semester page */
+
+  .semester1-section {
+    display:flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .semester-grid {
+      padding:15px;
+
+        display:grid;
+        grid-template-columns: repeat(3, minmax(200px, 500px));
+        grid-template-rows: repeat(2, minmax(50px, 150px)), auto;
+        grid-template-areas:
+        "semester-heading semester-heading semester-heading"
+        "learning-objectives learning-objectives learning-objectives"
+        "subject1 subject1 subject1 "
+        "knowledge skills competencies"
+        "learning-objectives2 learning-objectives2 learning-objectives2"
+        "subject2 subject2 subject2 "
+        "knowledge2 skills2 competencies2"
+        "exam exam exam"
+
+
+  }
+
+  /* The heading for each semester page */
+
+  .semester-heading {
+    text-transform: uppercase;
+    display:flex;
+    color:white;
+    line-height: 1;
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 600;
+    grid-area:semester-heading;
+  }
+
+  /* The exam info for each semester */
+
+  .exam {
+    grid-area:exam;
+    text-transform: uppercase;
+    display:flex;
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .examInfo {
+    grid-area:examInfo;
+    display:flex;
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  /* Knowledge div bock inside grid */
+  .knowledge-grid {
+    grid-area: knowledge;
+    display:grid;
+    grid-template-rows: minmax(50px, 150px), auto;
+  }
+
+  .knowledge-grid2 {
+    grid-area: knowledge2;
+    display:grid;
+    grid-template-rows: minmax(50px, 150px), auto;
+  }
+
+  .knowledge-h1 {
+    display:flex;
+  }
+
+  .knowledge-description {
+  display:flex;
+  }
+
+  .knowledge-description2 {
+  display:flex;
+  }
+
+
+
+  /* skills div bock inside grid */
+  .skills-grid {
+    grid-area: skills;
+    display:grid;
+    grid-template-rows: minmax(50px, 150px), auto;
+
+  }
+
+  .skills-grid2 {
+    grid-area: skills2;
+    display:grid;
+    grid-template-rows: minmax(50px, 150px), auto;
+
+  }
+
+  /* competencies div bock inside grid */
+  .competencies-grid {
+    grid-area: competencies;
+    display:grid;
+    grid-template-rows: minmax(50px, 150px), auto;
+
+  }
+
+  .competencies-grid2 {
+    grid-area: competencies2;
+    display:grid;
+    grid-template-rows: minmax(50px, 150px), auto;
+
+  }
+
+
+  .learning-objectives {
+    grid-area: learning-objectives;
+    display:flex;
+
+  }
+
+  .learning-objectives2 {
+    grid-area: learning-objectives2;
+    display:flex;
+
+  }
+
+  .learning-objectives h1 {
+    font-weight: 900;
+  }
+
+  .learning-objectives2 h1 {
+    font-weight: 900;
+  }
+
+  .subject1 {
+    grid-area: subject1;
+  }
+
+  .subject1 h1 {
+    font-weight: 300;
+  }
+
+  .subject2 {
+    grid-area: subject2;
+  }
+
+  .subject2 h1 {
+    font-weight: 300;
+  }
+
+  .semester-grid p {
+    display:flex;
+  }
+
+  /* Below is semester 2 section */
+  .semester2-section {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Below is semester 3 section */
+  .semester3-section {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Below will be semester 4 section */
+
+  /*Setting the colors of semester grids */
+
+  .semester1-section .semester-grid {
+      background-color: #FFB4AA;
+  }
+  .semester2-section .semester-grid {
+      background-color: #6ECEB2;
+  }
+  .semester3-section .semester-grid {
+      background-color: #59CBE8;
+  }
+  .semester4-section .semester-grid {
+      background-color: #FDD757;
+  }
+
+  /*semester 4 headings */
+
+  .semester4-heading {
+    grid-column: 1;
+  }
+
+  .semester4-text {
+    grid-column: 1/4;
+  }
