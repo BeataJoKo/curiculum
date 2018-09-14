@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet2a.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>KEA Curiculum</title>
   </head>
 
   <body>
@@ -22,6 +22,7 @@
 
       <h1 class="heading">Multimedia Design & Communication</h1>
       <h1 class="heading2">Curriculum</h1>
+
     <section class="semester-links">
       <div class="grid-container">
 
@@ -32,7 +33,6 @@
     </div>
     </section>
 
-    <article></article>
 
     <template id="template1">
         <section class="semester">
@@ -42,11 +42,11 @@
           <div class="subject">
              <h1></h1>
              </div>
-          <div class="knowledge">
+          <div class="skills">
               <h1></h1>
               <p></p>
              </div>
-          <div class="skills">
+          <div class="knowledge">
               <h1></h1>
               <p></p>
              </div>
@@ -54,21 +54,23 @@
              <h1></h1>
              <p></p>
              </div>
+          <div class="exam">Exam: <span class="examInfo"></span></div>
             </div>
           </section>
         </template>
+
 
     <script>
         const catList = "categoryList2a.json";
         const elementList = "programElementa2a.json";
         const curiculum = "curiculum.json";
 
-        const parent = document.querySelector("article");
+        const parent = document.querySelector("main");
         const nav = document.querySelector("nav");
         const template = document.querySelector("#template1").content;
 
         window.addEventListener("load", ()=>{
-        fetch("programElementa.json").then(promise=>promise.json()).then(showSubjects)
+        fetch("programElementa2a.json").then(promise=>promise.json()).then(showSubjects)
         })
 
         function showSubjects(data){
@@ -76,163 +78,25 @@
         console.log(data)
         const clone = template.cloneNode(true);
         clone.querySelector(".semester").className = data.category;
-
+        if (data.id == 6 || data.id == 8 || data.id == 10 || data.id == 12) {
+            clone.querySelector(".semester-heading").style.display = "none";
+          }
+        if (data.id == 5 || data.id == 7 || data.id == 9 || data.id == 11) {
+            clone.querySelector(".exam").style.display = "none";
+          }
         clone.querySelector(".semester-heading").textContent = data.category;
         clone.querySelector(".subject h1").textContent = data.name;
         clone.querySelector(".knowledge").innerHTML = data.knowledge;
         clone.querySelector(".skills").innerHTML = data.skills;
         clone.querySelector(".competencies").innerHTML = data.competance;
-
-
         parent.appendChild(clone);
 
         })
         }
 
-
-
         </script>
 
-    <section class="semester1-section">
-      <div class="semester-grid">
-        <div class="semester-heading">Semester 1</div>
-        <!-- semester 1 part 1 start -->
-        <div class="learning-objectives">
-          <h1>Learning Objectives</h1>
-        </div>
-        <div class="subject1">
-          <h1>Subject 1</h1>
-        </div>
-        <div class="knowledge-grid">
-          <h1 class="knowledge-h1">Knowledge</h1>
-          <p class="knowledge-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolor cum quisquam ad cupiditate ullam, autem unde, obcaecati quia quas cumque itaque commodi esse! Enim eius vero, quia laboriosam asperiores.</p>
-
-        </div>
-        <div class="skills-grid">
-          <h1 class="skills-h1">Skills</h1>
-          <p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro omnis ad ex autem quae id, expedita deserunt vel suscipit, similique eos temporibus delectus nisi. Nam sunt facere distinctio, id eveniet.</p>
-        </div>
-        <div class="competencies-grid">
-          <h1 class="competencies-h1">Competencies</h1>
-          <p class="competencies-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, illo, eveniet. Dolorem explicabo vitae, expedita impedit. Voluptatibus minus provident ipsum laboriosam, saepe dolores rem, suscipit sunt debitis in nam ea.</p>
-
-        </div>
-        <!-- semester 1 part 1 end -->
-        <!-- semester 1 part 2 start -->
-        <div class="learning-objectives2">
-          <h1>Learning Objectives</h1>
-        </div>
-        <div class="subject2">
-          <h1>Subject 2</h1>
-        </div>
-        <div class="knowledge-grid2">
-          <h1 class="knowledge-h1">Knowledge</h1>
-          <p class="knowledge-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolor cum quisquam ad cupiditate ullam, autem unde, obcaecati quia quas cumque itaque commodi esse! Enim eius vero, quia laboriosam asperiores.</p>
-
-        </div>
-        <div class="skills-grid2">
-          <h1 class="skills-h1">Skills</h1>
-          <p class="skills-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro omnis ad ex autem quae id, expedita deserunt vel suscipit, similique eos temporibus delectus nisi. Nam sunt facere distinctio, id eveniet.</p>
-        </div>
-        <div class="competencies-grid2">
-          <h1 class="competencies-h1">Competencies</h1>
-          <p class="competencies-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, illo, eveniet. Dolorem explicabo vitae, expedita impedit. Voluptatibus minus provident ipsum laboriosam, saepe dolores rem, suscipit sunt debitis in nam ea.</p>
-        </div>
-        <div class="exam">Exam: <span class="examInfo">Exam information goes here</span></div>
-        <!-- semester 1 part 2 end -->
-     </div>
-    </section>
-    <section class="semester2-section">
-      <div class="semester-grid">
-        <!-- semester 2 part 1 start -->
-        <div class="semester-heading">Semester 2</div>
-        <div class="learning-objectives">
-          <h1>Learning Objectives</h1>
-        </div>
-        <div class="subject1">
-          <h1>Subject 1</h1>
-        </div>
-        <div class="knowledge-grid">
-          <h1 class="knowledge-h1">Knowledge</h1>
-          <p class="knowledge-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolor cum quisquam ad cupiditate ullam, autem unde, obcaecati quia quas cumque itaque commodi esse! Enim eius vero, quia laboriosam asperiores.</p>
-
-        </div>
-        <div class="skills-grid">
-          <h1 class="skills-h1">Skills</h1>
-          <p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro omnis ad ex autem quae id, expedita deserunt vel suscipit, similique eos temporibus delectus nisi. Nam sunt facere distinctio, id eveniet.</p>
-        </div>
-        <div class="competencies-grid">
-          <h1 class="competencies-h1">Competencies</h1>
-          <p class="competencies-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, illo, eveniet. Dolorem explicabo vitae, expedita impedit. Voluptatibus minus provident ipsum laboriosam, saepe dolores rem, suscipit sunt debitis in nam ea.</p>
-        </div>
-        <!-- semester 2 part 1 end -->
-        <!-- semester 2 part 2 start -->
-        <div class="learning-objectives2">
-          <h1>Learning Objectives</h1>
-        </div>
-        <div class="subject2">
-          <h1>Subject 2</h1>
-        </div>
-        <div class="knowledge-grid2">
-          <h1 class="knowledge-h1">Knowledge</h1>
-          <p class="knowledge-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolor cum quisquam ad cupiditate ullam, autem unde, obcaecati quia quas cumque itaque commodi esse! Enim eius vero, quia laboriosam asperiores.</p>
-
-        </div>
-        <div class="skills-grid2">
-          <h1 class="skills-h1">Skills</h1>
-          <p class="skills-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro omnis ad ex autem quae id, expedita deserunt vel suscipit, similique eos temporibus delectus nisi. Nam sunt facere distinctio, id eveniet.</p>
-        </div>
-        <div class="competencies-grid2">
-          <h1 class="competencies-h1">Competencies</h1>
-          <p class="competencies-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, illo, eveniet. Dolorem explicabo vitae, expedita impedit. Voluptatibus minus provident ipsum laboriosam, saepe dolores rem, suscipit sunt debitis in nam ea.</p>
-        </div>
-<div class="exam">Exam: <span class="examInfo">Exam information goes here</span></div>
-        </div>
-        </section>
-        <!-- semester 2 part 2 end -->
-    <!-- Semester 3 section below here -->
-    <section class="semester3-section">
-
-      <div class="semester-grid">
-        <div class="semester-heading">Semester 3</div>
-        <!-- semester 3 part 1 start -->
-        <div class="learning-objectives">
-          <h1>Electives</h1>
-        </div>
-        <div class="knowledge-grid">
-          <h1 class="knowledge-h1">Frontend Design</h1>
-          <p class="knowledge-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolor cum quisquam ad cupiditate ullam, autem unde, obcaecati quia quas cumque itaque commodi esse! Enim eius vero, quia laboriosam asperiores.</p>
-
-        </div>
-        <div class="skills-grid">
-          <h1 class="skills-h1">Persuasive Content</h1>
-          <p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro omnis ad ex autem quae id, expedita deserunt vel suscipit, similique eos temporibus delectus nisi. Nam sunt facere distinctio, id eveniet.</p>
-        </div>
-        <div class="competencies-grid">
-          <h1 class="competencies-h1">Digitalt design og indhold</h1>
-          <p class="competencies-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, illo, eveniet. Dolorem explicabo vitae, expedita impedit. Voluptatibus minus provident ipsum laboriosam, saepe dolores rem, suscipit sunt debitis in nam ea.</p>
-        </div>
-        <div class="exam">Exam: <span class="examInfo">Exam information goes here</span></div>
-        <!-- semester 3 part 1 end -->
-     </div>
-    </section>
-    <!-- Semester 3 section below here -->
-    <section class="semester4-section">
-
-      <div class="semester-grid">
-        <div class="semester-heading">Semester 4</div>
-        <h1 class="semester4-heading">Internship</h1>
-        <p class="semester4-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis a dolorum nemo dolores esse exercitationem ex illum maiores ut nostrum laboriosam eum at suscipit velit inventore, molestiae unde debitis? Inventore!</p>
-
-        <h1 class="semester4-heading">Internship Exam</h1>
-        <p class="semester4-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo architecto magnam sint doloribus laudantium animi reprehenderit debitis, cumque rerum, ad, consequuntur omnis maxime laborum consectetur molestias voluptatem ut velit illo.</p>
-        <h1 class="semester4-heading">Final Exam</h1>
-        <p class="semester4-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae minus, obcaecati totam voluptatum! Dolorum illum, non porro cupiditate, odit temporibus nobis delectus aut! Quae provident, illo voluptatem cum animi eveniet!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at laudantium omnis repellat molestias officia ipsa, nulla tempore? Molestias ipsa eum, eos veritatis esse veniam vel iure quisquam atque perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ipsa, dolorem magni quaerat? Iste explicabo, velit hic accusamus tenetur nostrum vel obcaecati nam vitae illum. Laborum inventore nesciunt accusantium similique!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione iste iure culpa quaerat quae quis assumenda molestiae obcaecati quasi ad nesciunt quidem nulla modi voluptatem itaque velit, accusamus vero similique.</p>
-        <!-- semester 3 part 1 end -->
-     </div>
-    </section>
-
-  </main>
+     </main>
 
   </body>
 </html>

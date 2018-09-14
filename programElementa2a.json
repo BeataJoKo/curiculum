@@ -63,18 +63,6 @@
     {
     "id": "9",
     "category": "semester3",
-    "name": "*possibility for exchange",
-    "shortName": "Exchange",
-    "shortDescription": "",
-    "longDescription": "",
-    "skills": "",
-    "knowledge": "",
-    "competance": "",
-    "ECTS": "30 ECTS"
-  },
-    {
-    "id": "10",
-    "category": "semester3",
     "name": "Electives",
     "shortName": "Electives",
     "shortDescription": "",
@@ -88,7 +76,19 @@
     "ECTS": "30 ECTS"
   },
     {
-    "id": "12",
+    "id": "10",
+    "category": "semester3",
+    "name": "*possibility for exchange",
+    "shortName": "Exchange",
+    "shortDescription": "",
+    "longDescription": "",
+    "skills": "",
+    "knowledge": "",
+    "competance": "",
+    "ECTS": "30 ECTS"
+  },
+    {
+    "id": "11",
     "category": "semester4",
     "name": "Internship",
     "shortName": "Internship",
@@ -102,7 +102,7 @@
     "ECTS": "15 ECTS"
   },
     {
-    "id": "13",
+    "id": "12",
     "category": "semester4",
     "name": "Final Exam Project",
     "shortName": "Final Exam",

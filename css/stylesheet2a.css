@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400i,900');
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+    body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  /* Semester blocks section at the top */
+
+  .semester-links h1 {
+    color:white;
+  }
+
+  .semester-links {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Grid containing semester 1,2,3 and 4 */
+
+  .grid-container {
+        display:grid;
+        margin:auto;
+        grid-template-columns: repeat(2, minmax(12em, 25em));
+        grid-template-rows: repeat(2, minmax(10em, 10em));
+        padding: 4em 0em;
+        grid-template-areas:
+        "semester1 semester2"
+        "semester3 semester4"
+  }
+
+  .semester1 {
+    background-color: #FFB4AA;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: semester1;
+  }
+  .semester2 {
+    background-color: #6ECEB2;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+      grid-area: semester2;
+  }
+
+  .semester3 {
+    background-color: #59CBE8;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+      grid-area: semester3;
+  }
+  .semester4 {
+      background-color: #FDD757;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      grid-area: semester4;
+  }
+
+  /*Website navbar */
+
+  #logo {
+      height: 100px;
+      vertical-align: middle;
+  }
+
+
+  .nav-wrapper {
+      background-color: black;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  nav ul {
+      display: inline;
+      list-style: none;
+  }
+
+  nav li {
+      display: inline;
+      cursor: pointer;
+      padding: 43px 20px;
+      margin-left: 20px;
+  }
+
+  nav a {
+      text-decoration: none;
+      font-size: 2em;
+      color: white;
+  }
+
+  a:hover {
+      color: red;
+  }
+
+
+
+  /* Main heading above the semester blocks */
+
+  .heading {
+    text-transform: uppercase;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+      line-height: 1;
+      margin-top: 0;
+      font-size: 3rem;
+      font-weight: 300;
+      padding-top: 1em;
+  }
+
+  .heading2 {
+    text-transform: uppercase;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+/* Below is 1st semester page */
+
+  .semester {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .semester-grid {
+      padding:15px;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 6em  4em auto 4em;
+      grid-gap: 1em;
+      grid-template-areas:
+        "semester-heading semester-heading semester-heading "
+        "subject subject subject "
+        "knowledge skills competencies"
+        "exam exam exam"
+  }
+
+  /* The heading for each semester page */
+
+  .semester-heading {
+    text-transform: uppercase;
+    display:grid;
+    color:white;
+    padding: .5em 1em;
+    line-height: 1;
+    font-size: 3rem;
+    font-weight: 600;
+    grid-area: semester-heading;
+  }
+
+  /* The exam info for each semester */
+
+  .exam {
+    grid-area: exam;
+    text-transform: uppercase;
+    display:grid;
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .examInfo {
+    grid-area: exam;
+    display:grid;
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  /* Knowledge div bock inside grid */
+  .knowledge {
+    grid-area: knowledge;
+    display:grid;
+   }
+
+
+  /* skills div bock inside grid */
+  .skills {
+    grid-area: skills;
+    display:grid;
+    }
+
+  /* competencies div bock inside grid */
+  .competencies {
+    grid-area: competencies;
+    display:grid;
+   }
+
+  .subject h1 {
+    grid-area: subject;
+    display: grid;
+    font-weight: 300;
+  }
+
+  .semester-grid p {
+    display:flex;
+  }
+
+  /*Setting the colors of semester grids */
+
+  .semester1 .semester-grid {
+      background-color: #FFB4AA;
+  }
+  .semester2 .semester-grid {
+      background-color: #6ECEB2;
+  }
+  .semester3 .semester-grid {
+      background-color: #59CBE8;
+  }
+  .semester4 .semester-grid {
+      background-color: #FDD757;
+  }
+
