@@ -1,0 +1,25 @@
+
+[
+  {
+    "id": "1",
+    "category": "info",
+    "name": "Credit Transfer Rules",
+    "shortText": "",
+    "fullText": "<p>If you have completed a programme element at KEA it is equivalent to similar programme elements at other schools offering the same program as you attended. </p><p>If you have completed a program elements at another school or through job experience you must provide the information required for the credit transfer.</p><p>Each case is evaluated individually by comparison of subjects, programme elements and internships. The decision will be based of an academic evaluation.</p><p>If you are approved, you are obliged, after completing the period of study, to document the programme elements completed.</p><p>If approved, you must provide the school with the necessary information, after you have  completed the period of study. If a credit transfer is approved, programme elements have been completed according to the rules applied at the programme.</p>"
+  },
+  {
+    "id": "2",
+    "category": "info",
+    "name": "Exchange",
+    "shortText": "",
+    "fullText": "<p>As a KEA student, you have the opportunity to study one semester abroad at one of the international partner institutions without paying a fee at the university.</p><p>If you wish to go on exchange you may do so during your 3rd Semester.</p><p>Be aware that you need to contact your International Coordinator if you wish to apply for exchange.</p><p>To read more about outgoing exchange, see where you can go, and how to apply go to global.kea.dk.</p>"
+
+  },
+  {
+    "id": "3",
+    "category": "info",
+    "name": "ECTS",
+    "shortText": "",
+    "fullText": "<h3>What is ECTS?</h3><p>ECTS is an acronym for European Credit Transfer and Accumulation System. It is an international point system made to acknowledge courses and programmes studied while abroad. The ECT System measures and compares learning achievements and helps students easily transfer credits from one institution to another. It makes it possible for your studies to be easily recognised.</p><h3>How many ECTS does MMD grant?</h3><p>Each semester at the programme is worth 30 ECTS points giving the two-year programme a total of 120 ECTS points. To have a complete bachelor from KEA you must complete a top-up education granting you 90 ECTS and lasting 1.5 year.</p>"
+  }
+  ]

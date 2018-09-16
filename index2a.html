@@ -14,8 +14,8 @@
               <a href="#home">
                   <img id="logo" src="kea_logo.jpg" alt="kea logo"> </a>
               <ul>
-                  <li><a href="#home">HOME</a></li>
-                  <li><a href="#info">INFO</a></li>
+                  <li><a href="index2a.html">HOME</a></li>
+                  <li><a href="info.html">INFO</a></li>
               </ul>
           </div>
       </nav>
@@ -23,7 +23,7 @@
       <h1 class="heading">Multimedia Design & Communication</h1>
       <h1 class="heading2">Curriculum</h1>
 
-    <section class="semester-links">
+    <div class="semester-links">
       <div class="grid-container">
 
         <div class="semester1"><h1>1st Semester</h1></div>
@@ -31,39 +31,42 @@
         <div class="semester3"><h1>3rd Semester</h1></div>
         <div class="semester4"><h1>4th Semester</h1></div>
     </div>
-    </section>
+    </div>
+
+  </main>
+
+        <footer>
+        <div class="outside">
+        <h1>Do you have any questions?</h1>
+        <div class="inside">
+            <p>type your question here...</p>
+            </div>
+            <p>KEA - copyright 2018  -  Lygten 16 Copenhagen NV 2400 </p>
+        </div>
+        </footer>
 
 
     <template id="template1">
         <section class="semester">
          <div class="semester-grid">
-             <div class="semester-heading"></div>
 
+          <div class="semester-heading"></div>
           <div class="subject">
-             <h1></h1>
-             </div>
-          <div class="skills">
-              <h1></h1>
-              <p></p>
-             </div>
-          <div class="knowledge">
-              <h1></h1>
-              <p></p>
-             </div>
-          <div class="competencies">
-             <h1></h1>
-             <p></p>
-             </div>
+             <h1></h1></div>
+          <div class="knowledge"></div>
+          <div class="skills"></div>
+          <div class="competencies"></div>
           <div class="exam">Exam: <span class="examInfo"></span></div>
-            </div>
-          </section>
-        </template>
+
+        </div>
+      </section>
+    </template>
 
 
     <script>
         const catList = "categoryList2a.json";
         const elementList = "programElementa2a.json";
-        const curiculum = "curiculum.json";
+   //     const curiculum = "curiculum.json";
 
         const parent = document.querySelector("main");
         const nav = document.querySelector("nav");
@@ -78,10 +81,10 @@
         console.log(data)
         const clone = template.cloneNode(true);
         clone.querySelector(".semester").className = data.category;
-        if (data.id == 6 || data.id == 8 || data.id == 10 || data.id == 12) {
+        if (data.id == 6 || data.id == 8 || data.id == 12) {
             clone.querySelector(".semester-heading").style.display = "none";
           }
-        if (data.id == 5 || data.id == 7 || data.id == 9 || data.id == 11) {
+        if (data.id == 5 || data.id == 7 || data.id == 9 ) {
             clone.querySelector(".exam").style.display = "none";
           }
         clone.querySelector(".semester-heading").textContent = data.category;
@@ -89,14 +92,13 @@
         clone.querySelector(".knowledge").innerHTML = data.knowledge;
         clone.querySelector(".skills").innerHTML = data.skills;
         clone.querySelector(".competencies").innerHTML = data.competance;
+        clone.querySelector(".examInfo").innerHTML = data.exam;
         parent.appendChild(clone);
 
         })
         }
 
         </script>
-
-     </main>
 
   </body>
 </html>

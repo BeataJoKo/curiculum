@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/stylesheet2a.css">
+    <meta charset="utf-8">
+    <title>KEA Curiculum</title>
+  </head>
+
+  <body>
+
+    <main>
+       <nav>
+          <div class="nav-wrapper">
+              <a href="#home">
+                  <img id="logo" src="kea_logo.jpg" alt="kea logo"> </a>
+              <ul>
+                  <li><a href="index2a.html">HOME</a></li>
+                  <li><a href="info.html">INFO</a></li>
+              </ul>
+          </div>
+      </nav>
+
+
+      <h1 class="heading">Multimedia Design & Communication</h1>
+      <h1 class="heading2">Additional Information</h1>
+
+      <div class="article-container"></div>
+
+    </main>
+
+      <footer>
+        <div class="outside">
+        <h1>Do you have any questions?</h1>
+        <div class="inside">
+            <p>type your question here...</p>
+            </div>
+            <p>KEA - copyright 2018  -  Lygten 16 Copenhagen NV 2400 </p>
+        </div>
+        </footer>
+
+    <template id="template2">
+        <article>
+        <h1></h1>
+        <div class="text"></div>
+        </article>
+    </template>
+
+    <script>
+        const infoList = "info.json";
+
+        const parent = document.querySelector(".article-container");
+        const template = document.querySelector("#template2").content;
+
+        let counter = 0;
+        window.addEventListener("load", ()=>{
+        fetch("info.json").then(promise=>promise.json()).then(showInfo)
+        })
+
+        function showInfo(data){
+        data.forEach(data =>{
+        counter ++;
+        console.log(data)
+        const clone = template.cloneNode(true);
+        clone.querySelector("h1").textContent = data.name;
+        clone.querySelector(".text").innerHTML = data.fullText;
+        clone.querySelector("article").classList.add("article"+counter);
+
+        parent.appendChild(clone);
+
+        })
+        }
+    </script>
+
+  </body>
+</html>
