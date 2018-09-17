@@ -70,7 +70,7 @@
   /*Website navbar */
 
   #logo {
-      height: 100px;
+      height: 70px;
       vertical-align: middle;
   }
 
@@ -79,6 +79,7 @@
       background-color: black;
       display: flex;
       justify-content: space-around;
+      height:70px;
   }
 
   nav ul {
