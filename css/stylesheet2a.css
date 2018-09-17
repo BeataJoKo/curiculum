@@ -221,17 +221,17 @@ section{
 
 /* Specify for 4th semester */
 
-main .semester4 .knowledge{
+main div.knowledge:last-of-type{
     display:grid;
     grid-column: 2/4;
 }
 
-main .semester4 .skills{
+main div.skills:last-of-type{
     display:grid;
     grid-column: 4;
 }
 
-main .semester4 .competencies{
+main div.competencies:last-of-type{
     display: none;
 }
 

@@ -47,7 +47,7 @@
 
 
     <template id="template1">
-        <section class="semester">
+        <section class="semester" id="#">
          <div class="semester-grid">
 
           <div class="semester-heading"></div>
@@ -84,7 +84,7 @@
         if (data.id == 6 || data.id == 8 || data.id == 12) {
             clone.querySelector(".semester-heading").style.display = "none";
           }
-        if (data.id == 5 || data.id == 7 || data.id == 9 ) {
+        if (data.id == 5 || data.id == 7 ) {
             clone.querySelector(".exam").style.display = "none";
           }
         clone.querySelector(".semester-heading").textContent = data.category;
@@ -93,6 +93,7 @@
         clone.querySelector(".skills").innerHTML = data.skills;
         clone.querySelector(".competencies").innerHTML = data.competance;
         clone.querySelector(".examInfo").innerHTML = data.exam;
+        clone.querySelector("section").id = data.id;
         parent.appendChild(clone);
 
         })
