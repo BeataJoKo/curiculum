@@ -56,7 +56,7 @@
           <div class="knowledge"></div>
           <div class="skills"></div>
           <div class="competencies"></div>
-          <div class="exam">Exam: <span class="examInfo"></span></div>
+          <div class="exam"><span class="examInfo"></span></div>
 
         </div>
       </section>
@@ -98,7 +98,7 @@
         clone.querySelector(".skills").innerHTML = data.skills;
         clone.querySelector(".competencies").innerHTML = data.competance;
         clone.querySelector(".examInfo").innerHTML = data.exam;
-        clone.querySelector("section").id = data.id;
+   //     clone.querySelector("section").id = data.id;
         parent.appendChild(clone);
 
         })
