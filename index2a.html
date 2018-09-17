@@ -26,10 +26,10 @@
     <div class="semester-links">
       <div class="grid-container">
 
-        <div class="semester1"><h1>1st Semester</h1></div>
-        <div class="semester2"><h1>2nd Semester</h1></div>
-        <div class="semester3"><h1>3rd Semester</h1></div>
-        <div class="semester4"><h1>4th Semester</h1></div>
+        <div class="semester1"><h1>SEMESTER1</h1></div>
+        <div class="semester2"><h1>SEMESTER2</h1></div>
+        <div class="semester3"><h1>SEMESTER3</h1></div>
+        <div class="semester4"><h1>SEMESTER4</h1></div>
     </div>
     </div>
 
@@ -84,9 +84,14 @@
         if (data.id == 6 || data.id == 8 || data.id == 12) {
             clone.querySelector(".semester-heading").style.display = "none";
           }
-        if (data.id == 5 || data.id == 7 ) {
+        if (data.id == 5 || data.id == 7 || data.id == 11 || data.id == 12 ) {
             clone.querySelector(".exam").style.display = "none";
           }
+        if (data.id == 12){
+        clone.querySelector(".semester-grid").className ="semester-grid2";
+        clone.querySelector(".competencies").style.display = "none";
+
+        }
         clone.querySelector(".semester-heading").textContent = data.category;
         clone.querySelector(".subject h1").textContent = data.name;
         clone.querySelector(".knowledge").innerHTML = data.knowledge;

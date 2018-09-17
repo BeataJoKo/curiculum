@@ -134,10 +134,17 @@
 
   .semester-grid {
       display:grid;
-      grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+      grid-template-columns: 5em 1fr 1fr 1fr 5em;
       grid-template-rows: auto;
       grid-gap: 2em;
   }
+
+.semester-grid2{
+    display:grid;
+      grid-template-columns: 5em 1fr 1fr 5em;
+      grid-template-rows: auto;
+      grid-gap: 2em;
+}
 
   .semester-heading {
     text-transform: uppercase;
@@ -160,12 +167,14 @@
 
  .subject h1 {
     font-weight: 300;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: rgba(255, 255, 255, 0.8);
     }
 
 .semester-grid p, ul{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: .5em;
+}
+
+.semester-grid2 p{
     background-color: rgba(255, 255, 255, 0.4);
     padding: .5em;
 }
@@ -217,22 +226,6 @@
 
 section{
     padding-bottom: 2em;
-}
-
-/* Specify for 4th semester */
-
-main div.knowledge:last-of-type{
-    display:grid;
-    grid-column: 2/4;
-}
-
-main div.skills:last-of-type{
-    display:grid;
-    grid-column: 4;
-}
-
-main div.competencies:last-of-type{
-    display: none;
 }
 
  /*Setting the colors of semester grids */
@@ -313,3 +306,6 @@ footer p{
     grid-column: 1/4;
     text-align: center;
 }
+
+
+/*RESPONSIVE */
