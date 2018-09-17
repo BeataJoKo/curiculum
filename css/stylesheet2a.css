@@ -308,5 +308,331 @@ footer p{
     text-align: center;
 }
 
+/* EVERYTHING BELOW IS RESPONSIVE */
+
 
 /*RESPONSIVE */
+@media all and (max-width: 50em) {
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,400i,900');
+
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
+      body {
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    /* Semester blocks section at the top */
+
+    .semester-links h1 {
+      color:white;
+    }
+
+    .semester-links {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Grid containing semester 1,2,3 and 4 */
+
+    .grid-container {
+          display:grid;
+          margin:auto;
+          grid-template-columns: minmax(12em, 25em);
+          grid-template-rows: repeat(4, minmax(10em, 10em));
+          padding: 4em 0em;
+          grid-template-areas:
+          "semester1"
+          "semester2"
+          "semester3"
+          "semester4"
+    }
+    /* Not needed anymore after the JS update
+
+    .semester1 {
+      background-color: #FFB4AA;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      grid-area: semester1;
+    }
+    .semester2 {
+      background-color: #6ECEB2;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+        grid-area: semester2;
+    }
+
+    .semester3 {
+      background-color: #59CBE8;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+        grid-area: semester3;
+    }
+    .semester4 {
+        background-color: #FDD757;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: semester4;
+    }
+
+    */
+
+    /*Website navbar */
+
+    #logo {
+        height: 70px;
+        vertical-align: middle;
+    }
+
+
+    .nav-wrapper {
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        height:70px;
+    }
+
+    nav ul {
+        display: inline;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline;
+        cursor: pointer;
+        padding: 43px 20px;
+        margin-left: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 2em;
+        color: white;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+
+
+    /* Main heading above the semester blocks */
+
+/* NO LONGER NEEDED AFTER JS UPDATE
+    .heading {
+      text-transform: uppercase;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+        line-height: 1;
+        margin-top: 0;
+        font-size: 3rem;
+        font-weight: 300;
+        padding-top: 1em;
+    }
+
+    .heading2 {
+      text-transform: uppercase;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      margin-top: 0;
+      font-size: 3rem;
+      font-weight: 900;
+    }
+
+     */
+
+  /* Below is each semester page */
+
+    .semester-grid {
+        display:grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5em;
+        grid-gap: 2em;
+        align-items: center;
+    }
+
+  .semester-grid2{
+      display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 2em;
+  }
+
+  .semester-heading {
+    text-transform: uppercase;
+    display:grid;
+    color:white;
+    padding: .5em 1em;
+    line-height: 1;
+    font-size: 3rem;
+    font-weight: 600;
+    display: grid;
+    grid-column: 1;
+  }
+
+  .subject{
+    display: grid;
+    grid-column: 1;
+    margin: 2em 0em 2em 2em;
+    border-bottom: 6px double rgba(255, 255, 255, 0.8);
+  }
+
+   .subject h1 {
+      font-weight: 300;
+      }
+
+  .semester-grid p, ul{
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: .5em;
+  }
+
+  .semester-grid2 p{
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: .5em;
+  }
+
+   .knowledge {
+      display:grid;
+      grid-column: 1;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+      border-right: 3px solid rgba(255, 255, 255, 0.8);
+     }
+
+    .skills {
+      display:grid;
+
+      grid-column: 1;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+      border-right: 2px solid rgba(255, 255, 255, 0.8);
+      }
+
+    .competencies {
+      display:grid;
+        grid-column: 1;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+      border-right: 1px solid rgba(255, 255, 255, 0.8);
+     }
+
+    .exam {
+      text-transform: uppercase;
+      margin-top: 0;
+      font-size: 2rem;
+      font-weight: 400;
+      display: grid;
+      grid-column: 1;
+    }
+
+    .examInfo {
+      margin-top: 0;
+      font-size: 1.5rem;
+      font-weight: 200;
+      display: grid;
+      grid-column: 1;
+    }
+
+  .examInfo p{
+      background-color: transparent;
+  }
+
+  section{
+
+  }
+
+   /*Setting the colors of semester grids */
+
+    .semester1{
+        background-color: #FFB4AA;
+    }
+    .semester2{
+        background-color: #6ECEB2;
+    }
+    .semester3{
+        background-color: #59CBE8;
+    }
+    .semester4{
+        background-color: #FDD757;
+    }
+
+  /*ADDITIONAL INFO STYLING */
+
+  .article-container{
+      margin-top: 3.5em;
+      display:grid;
+        grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+        grid-template-rows: auto;
+        grid-gap: 3em;
+  }
+
+  .article1{
+     grid-column: 2;
+  }
+
+  .article2{
+      grid-column: 3;
+      padding-top: 8em;
+  }
+
+  .article3{
+      grid-column: 4;
+      margin-top: 8em;
+      padding-top: 8em;
+  }
+
+  article p, h3{
+      text-align: justify;
+      margin: 1.2em 0em;
+  }
+
+  article h1{
+      text-align: center;
+      padding-bottom: .3em;
+      border-left: 3px solid navy;
+      border-bottom: 3px solid navy;
+  }
+
+
+  /* FOOTER */
+  .outside{
+
+      background-color: navy;
+      color: white;
+      display:grid;
+        grid-template-columns: .25fr 1fr .25fr;
+        grid-template-rows: 2em 10em 5em;
+        grid-gap: 3em;
+
+        display:none;
+  }
+
+  .inside{
+      background-color: white;
+      color: black;
+      grid-column: 2;
+      display:none;
+  }
+
+  footer h1{
+      padding: .2em .5em;
+      grid-column: 1/4;
+      display:none;
+  }
+  footer p{
+      grid-column: 1/4;
+      text-align: center;
+      display:none;
+  }
+}
