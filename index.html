@@ -35,6 +35,8 @@
 
   </main>
 
+<img onclick="topFunction()" class="arrow_up" title="Go to top" src="arrow_up.png">
+
         <footer>
         <div class="outside">
         <h1>Do you have any questions?</h1>
@@ -108,6 +110,24 @@
         parent.appendChild(clone);
 
         })
+        }
+
+        const arrowUp = document.querySelector(".arrow_up");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        function scrollFunction() {
+            console.log(arrowUp)
+            if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+                arrowUp.style.display = "block";
+            } else {
+                arrowUp.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
 
         </script>
