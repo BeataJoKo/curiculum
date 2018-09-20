@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/stylesheet2a.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KEA Curiculum</title>
   </head>
 
@@ -14,7 +15,7 @@
               <a href="#home">
                   <img id="logo" src="kea_logo.jpg" alt="kea logo"> </a>
               <ul>
-                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="index.html" class="active">HOME</a></li>
                   <li><a href="info.html">INFO</a></li>
               </ul>
           </div>
@@ -42,6 +43,10 @@
         <h1>Do you have any questions?</h1>
         <div class="inside">
             <p>type your question here...</p>
+            </div>
+            <div class="social-media-icons">
+            <a href="https://da-dk.facebook.com/kea.dk/" target="_blank"><img src="facebook.png"></a>
+            <a href="https://www.instagram.com/keacph/?hl=da" target="_blank"><img src="instagram.png"></a>
             </div>
             <p>KEA - copyright 2018  -  Lygten 16 Copenhagen NV 2400 </p>
         </div>
@@ -82,6 +87,7 @@
         data.forEach(data =>{
         console.log(data)
         const clone = template.cloneNode(true);
+
         clone.querySelector(".semester").className = data.category;
         if (data.id == 6 || data.id == 8 || data.id == 12) {
             clone.querySelector(".semester-heading").style.display = "none";
@@ -89,6 +95,11 @@
         if (data.id == 5 || data.id == 7 || data.id == 11 || data.id == 12 ) {
             clone.querySelector(".exam").style.display = "none";
           }
+//        if (data.id == 9){
+//        const newLink = document.createElement("a");
+//        newLink.href = "#2";
+//        p.Last.appendChild(newLink);
+//          }
         if (data.id == 11){
         clone.querySelector(".semester-grid").className = "semester-grid2";
         clone.querySelector(".subject").style.gridColumn = "1/4";

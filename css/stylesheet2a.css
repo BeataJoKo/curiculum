@@ -105,14 +105,12 @@
   }
 
   a:hover {
-      color: red;
+      color: #EA4D44;
   }
 
-a:active {
-    color: red;
+.active {
+    color: #EA4D44;
 }
-
-
 
   /* Main heading above the semester blocks */
 
@@ -334,6 +332,19 @@ article h1{
     color: black;
     grid-column: 2;
 }
+.social-media-icons {
+    text-align: center;
+     grid-column: 2;
+}
+
+
+footer img{
+    filter: invert(100%);
+    width: 4em;
+    display:inline;
+    padding: .5em;
+
+}
 
 footer h1{
     padding: .2em .5em;
@@ -348,7 +359,7 @@ footer p{
 
 
 /*RESPONSIVE */
-@media all and (max-width: 50em) {
+@media (min-width: 320px) and (max-width: 480px) {
 
     /* Semester blocks section at the top */
 
@@ -391,13 +402,14 @@ footer p{
     nav ul {
         display: inline;
         list-style: none;
+        font-size: 1em;
     }
 
     nav li {
         display: inline;
         cursor: pointer;
-        padding: 43px 20px;
-        margin-left: 20px;
+        padding: 0px 0px;
+        margin-left: 0px;
     }
 
   /* Below is each semester page */
@@ -408,7 +420,6 @@ footer p{
         grid-template-columns: 1fr;
         grid-template-rows: 5em;
         grid-gap: 0em;
-        padding: 0em 1em;
         align-items: center;
     }
 
@@ -417,7 +428,6 @@ footer p{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-gap: 0em;
-      padding: 0em 1em;
   }
 
 .semester-grid3{
@@ -425,7 +435,6 @@ footer p{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-gap: 0em;
-      padding: 0em 1em;
   }
 
 
@@ -516,4 +525,40 @@ footer p{
       border-left: 3px solid navy;
       border-bottom: 3px solid navy;
   }
+
+footer h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.heading {
+    text-transform: uppercase;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+      line-height: 1;
+      margin-top: 0;
+      font-size: 2rem;
+      font-weight: 300;
+      padding-top: 1em;
+    text-align: center;
+  }
+
+.heading2 {
+    text-transform: uppercase;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+footer img{
+    filter: invert(100%);
+    width: 2.5em;
+    display:inline;
+}
+
 }

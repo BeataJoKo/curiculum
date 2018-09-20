@@ -61,7 +61,7 @@
     "longDescription": "",
     "skills": "<p>The electives are offered as a means for students to specialise themselves in particular subjects related to multimedia design and communication in line with the purpose and objectives of the study programme.</p>",
     "knowledge": "<h2>Electives</h2><p>The students have the opportunity to choose one of the following elective courses.</p><ul><li>Frontend Design (taught in English)</li><li>Persuasive Content (taught in English)</li><li>Digitalt design og indhold (taught in Danish)</li>",
-    "competance": "<p>possibility for exchange</p>",
+    "competance": "<a href='info.html#2'><p>possibility for exchange</p></a>",
     "ECTS": "30 ECTS",
     "exam": "<p>Elective exam: 30 ECTS</p>"
   },
