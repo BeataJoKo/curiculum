@@ -80,10 +80,11 @@
 
 
   .nav-wrapper {
-      background-color: black;
+       background-color: black;
       display: flex;
+      width: 100vw;
       justify-content: space-around;
-      height:70px;
+      position: fixed;
   }
 
   nav ul {
@@ -123,7 +124,7 @@
       margin-top: 0;
       font-size: 3rem;
       font-weight: 300;
-      padding-top: 1em;
+      padding-top: 2em;
   }
 
   .heading2 {
@@ -258,6 +259,9 @@ section{
   .semester3{
       background-color: #59CBE8;
   }
+.semester3 ul{
+        padding-left: 1.5em;
+ }
   .semester4{
       background-color: #FDD757;
   }
@@ -301,7 +305,7 @@ article h1{
 
 /* ARROW */
 .arrow_up{
-     display: none;
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -332,18 +336,17 @@ article h1{
     color: black;
     grid-column: 2;
 }
+
 .social-media-icons {
     text-align: center;
      grid-column: 2;
 }
-
 
 footer img{
     filter: invert(100%);
     width: 4em;
     display:inline;
     padding: .5em;
-
 }
 
 footer h1{
@@ -361,19 +364,24 @@ footer p{
 /*RESPONSIVE */
 @media (min-width: 320px) and (max-width: 480px) {
 
+
     /* Semester blocks section at the top */
 
-   .semester-links {
-      display:flex;
-      align-items: center;
-      justify-content: center;
-    }
+.heading {
+      font-size: 2rem;
+      padding-top: 3em;
+      text-align: center;
+  }
+
+.heading2 {
+    font-size: 2rem;
+    text-align: center;
+   }
 
     /* Grid containing semester 1,2,3 and 4 */
 
     .grid-container {
           display:grid;
-          margin:auto;
           grid-template-columns: minmax(12em, 25em);
           grid-template-rows: repeat(4, minmax(10em, 10em));
           padding: 4em 0em;
@@ -386,30 +394,13 @@ footer p{
 
     /*Website navbar */
 
-    #logo {
-        height: 70px;
-        vertical-align: middle;
-    }
-
-
-    .nav-wrapper {
-        background-color: black;
-        display: flex;
-        justify-content: space-around;
-        height:70px;
-    }
-
-    nav ul {
-        display: inline;
-        list-style: none;
+  nav ul {
         font-size: 1em;
     }
 
     nav li {
-        display: inline;
-        cursor: pointer;
         padding: 0px 0px;
-        margin-left: 0px;
+        margin-left: 6px;
     }
 
   /* Below is each semester page */
@@ -420,21 +411,26 @@ footer p{
         grid-template-columns: 1fr;
         grid-template-rows: 5em;
         grid-gap: 0em;
+        padding: 0em 1em;
         align-items: center;
     }
 
   .semester-grid2{
-      display:grid;
+        display:grid;
+        text-align: center;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-gap: 0em;
+        padding: 0em 1em;
   }
 
 .semester-grid3{
-      display:grid;
+        display:grid;
+        text-align: center;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-gap: 0em;
+        padding: 0em 1em;
   }
 
 
@@ -458,18 +454,30 @@ footer p{
       grid-column: 1;
       margin-top: 1.5em;
       }
+    .knowledge h2{
+        text-align: left;
+    }
 
     .skills {
+      display:grid;
+      grid-column: 1;
+      margin-top: 1.5em;
+     }
+
+    .skils h2{
+        text-align: center;
+    }
+
+    .competencies {
       display:grid;
       grid-column: 1;
        margin-top: 1.5em;
      }
 
-    .competencies {
-      display:grid;
-        grid-column: 1;
-         margin-top: 1.5em;
-       }
+    .competencies h2{
+        text-align: right;
+    }
+
 
     .exam {
       margin-top: 0;
@@ -488,27 +496,31 @@ footer p{
     }
 
 
+
   /*ADDITIONAL INFO STYLING */
 
-  .article-container{
+.article-container{
       margin-top: 3.5em;
       display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-gap: 1em;
-      padding: 0em 1em;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-gap: 0em;
+      padding: 0em 1.5em;
   }
 
   .article1{
+     display:grid;
      grid-column: 1;
   }
 
   .article2{
+      display:grid;
       grid-column: 1;
       padding-top: 0em;
   }
 
-  .article3{
+    .article3{
+      display:grid;
       grid-column: 1;
       margin-top: 0em;
       padding-top: 0em;
@@ -529,36 +541,6 @@ footer p{
 footer h1 {
     font-size: 1.5em;
     text-align: center;
-}
-
-.heading {
-    text-transform: uppercase;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-      line-height: 1;
-      margin-top: 0;
-      font-size: 2rem;
-      font-weight: 300;
-      padding-top: 1em;
-    text-align: center;
-  }
-
-.heading2 {
-    text-transform: uppercase;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    margin-top: 0;
-    font-size: 2rem;
-    font-weight: 900;
-  }
-
-footer img{
-    filter: invert(100%);
-    width: 2.5em;
-    display:inline;
 }
 
 }

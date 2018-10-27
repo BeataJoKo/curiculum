@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/stylesheet2a.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KEA Curiculum</title>
   </head>
 
@@ -28,18 +29,24 @@
 
     </main>
 
+    <img onclick="topFunction()" class="arrow_up" title="Go to top" src="arrow_up.png">
+
       <footer>
-        <div class="outside">
+       <div class="outside">
         <h1>Do you have any questions?</h1>
         <div class="inside">
             <p>type your question here...</p>
+            </div>
+            <div class="social-media-icons">
+            <a href="https://da-dk.facebook.com/kea.dk/" target="_blank"><img src="facebook.png"></a>
+            <a href="https://www.instagram.com/keacph/?hl=da" target="_blank"><img src="instagram.png"></a>
             </div>
             <p>KEA - copyright 2018  -  Lygten 16 Copenhagen NV 2400 </p>
         </div>
         </footer>
 
     <template id="template2">
-        <article>
+        <article id="#">
         <h1></h1>
         <div class="text"></div>
         </article>
@@ -64,10 +71,30 @@
         clone.querySelector("h1").textContent = data.name;
         clone.querySelector(".text").innerHTML = data.fullText;
         clone.querySelector("article").classList.add("article"+counter);
+        clone.querySelector("article").id = data.id;
 
         parent.appendChild(clone);
 
         })
+        }
+
+           const arrowUp = document.querySelector(".arrow_up");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        function scrollFunction() {
+            console.log(arrowUp)
+            if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+                arrowUp.style.display = "block";
+                arrowUp.style.filter = "invert(1)";
+            } else {
+                arrowUp.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 
